@@ -26,7 +26,11 @@
 		<script>
 		var boardElement = document.querySelector(".tenuki-board");
 		var game = new tenuki.Game({ element: boardElement, boardSize: 9 });
-		game.boardSize = document.getElementById("boardSize");
+		const number = document.getElementById('boardSize');
+	
+		button.addEventListener('change', function() {
+		  game.boardSize = number.value;
+		});
 		
 		var controlElement = document.querySelector(".controls");
 		var controls = new ExampleGameControls(controlElement, game);
