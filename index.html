@@ -40,6 +40,7 @@
 			};
 			
 			number.addEventListener('change', function() {
+				boardElement.remove();
 				game = new tenuki.Game({ element: boardElement, boardSize: Number(number.value)});
 				controlElement = document.querySelector(".controls");
 				controls = new ExampleGameControls(controlElement, game);
