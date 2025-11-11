@@ -28,7 +28,7 @@
 		var game = new tenuki.Game({ element: boardElement, boardSize: 9 });
 		const number = document.getElementById('boardSize');
 	
-		button.addEventListener('change', function() {
+		number.addEventListener('change', function() {
 		  game.boardSize = number.value;
 		});
 		
