@@ -8,25 +8,26 @@
         <script src="example-controls.js"></script>
 	</head>
 	<body>
+		
 		<header>
 			<h1>testing</h1>
 		</header>
+		
       <div class="tenuki-board"></div>
-
+		
 		<div class="controls">
 	    	<div class="buttons">
 		    	<a class="pass" href="#">Pass</a>
 		    	<a class="undo" href="#">Undo</a>
 	    	</div>
+			<div class="input">
+				<input type="number" id="boardSize" value=9 min="1" max="19">
+			</div>
 	
 	    	<div class="game-info"><p>&nbsp;</p></div>
 	    	<div class="text-info"><p></p></div>
 		</div>
-
-		<div>
-			<input type="number" id="boardSize" value=9 min="1" max="19">
-		</div>
-
+		
 		<script>
 			const number = document.getElementById('boardSize');
 			var boardElement = document.querySelector(".tenuki-board");
@@ -51,5 +52,6 @@
 				};
 			});
 		</script>
+		
 	</body>
 </html>
