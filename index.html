@@ -32,7 +32,7 @@
 			var boardElement = document.querySelector(".tenuki-board");
 			var game = new tenuki.Game({ element: boardElement, boardSize: Number(document.getElementById('boardSize').value)});
 
-			number.addEventListenedr('change', function() {
+			number.addEventListener('change', function() {
 				console.log('change');
 			});
 			
