@@ -29,6 +29,7 @@
 		const number = document.getElementById('boardSize');
 	
 		number.addEventListener('change', function() {
+		  console.log("input detected: " + number.value);
 		  game.boardSize = number.value;
 		});
 		
